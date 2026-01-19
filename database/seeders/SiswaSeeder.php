@@ -1,0 +1,23 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class SiswaSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        \App\Models\Bebas::insert([
+            [
+                "nama_siswa" => "Contoh",
+                "kelas" => "XII SIJA",
+                "absen" => 20
+            ]
+        ]);
+    }
+}
