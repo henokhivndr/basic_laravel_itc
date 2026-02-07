@@ -7,5 +7,8 @@ Route::get('/', function () {
     return view('page.home');
 });
 
-Route::get('/about', [BebasController::class, 'index']);
+Route::get('/about', [BebasController::class, 'index']);   // list data
 Route::get('/about/{id}', [BebasController::class, 'detail']);
+
+Route::get('/create', [BebasController::class, 'create']); // tampil form
+Route::post('/about', [BebasController::class, 'store']);  // simpan data
